@@ -26,6 +26,18 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
+# Use dotenv to allow .env files to be loaded
+gem 'dotenv-rails', '~> 2.7.5'
+
+# Use OmniAuth to allow logins with GitHub
+gem 'omniauth', '~> 1.9.1'
+gem 'omniauth-github-team-member', '~> 2.0.1'
+gem 'omniauth-rails_csrf_protection', '~> 0.1.2'
+
+# Use AWS CodePipeline and ECR
+gem 'aws-sdk-codepipeline', '~> 1.30.0'
+gem 'aws-sdk-ecr', '~> 1.29.0'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
