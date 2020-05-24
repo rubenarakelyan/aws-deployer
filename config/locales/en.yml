@@ -30,4 +30,15 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  app_name: AWS Deployer
+  nav:
+    toggle_navigation: Toggle navigation
+    current: current
+    home: Home
+  toast:
+    close: Close
+  auth:
+    log_in: Log in with GitHub
+    log_out: Log out
+    unauthorised: You are not authorised to use this application. Please contact the administrator.
+    logged_out: You have logged out.
