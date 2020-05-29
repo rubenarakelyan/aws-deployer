@@ -41,6 +41,7 @@ en:
     log_in: Log in with GitHub
     log_out: Log out
     unauthorised: You are not authorised to use this application. Please contact the administrator.
+    please_log_in: Please log in to use this application.
     logged_out: You have logged out.
   pipelines:
     deploy_button: Deploy to production
