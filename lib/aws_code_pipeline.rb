@@ -34,7 +34,7 @@ class AwsCodePipeline
     ).pipeline_execution_summaries[0]
     Pipeline.new(
       name: name,
-      display_name: display_name,
+      display_name: display_name || name,
       status: executions.status,
       start_time: executions.start_time.strftime("%-d %B %Y %H:%M"),
       source_revision: executions.source_revisions[0].revision_id

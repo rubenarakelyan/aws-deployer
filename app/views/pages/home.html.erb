@@ -3,7 +3,7 @@
   <div class="col-md">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title"><%= @staging_pipeline.name %></h5>
+        <h5 class="card-title"><%= @staging_pipeline.display_name %></h5>
         <h6 class="card-subtitle mb-2 text-muted"><%= @staging_pipeline.status %></h6>
         <p class="card-text">
           <svg class="bi bi-code" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -31,7 +31,7 @@
   <div class="col-md">
   <div class="card">
     <div class="card-body">
-      <h5 class="card-title"><%= @production_pipeline.name %></h5>
+      <h5 class="card-title"><%= @production_pipeline.display_name %></h5>
       <h6 class="card-subtitle mb-2 text-muted"><%= @production_pipeline.status %></h6>
       <p class="card-text">
         <svg class="bi bi-code" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

@@ -55,6 +55,8 @@ You can deploy directly to [Heroku](https://heroku.com/deploy). Ensure you have 
 * `PRODUCTION_PIPELINE`: The name of the production CodePipeline pipeline
 * `IMAGE_REPOSITORY`: The name of the ECR repository
 
+`STAGING_PIPELINE` and `PRODUCTION_PIPELINE` optionally supports a semicolon-separated string where the first part is the name of the pipeline in CodePipeline and the second part is a display name to be used in the interface.
+
 An `.env.example` file is also provided for reference.
 
 ## Tests
