@@ -42,3 +42,8 @@ en:
     log_out: Log out
     unauthorised: You are not authorised to use this application. Please contact the administrator.
     logged_out: You have logged out.
+  pipelines:
+    deploy_button: Deploy to production
+    in_sync: In sync
+    not_in_sync: Not in sync
+    deploying: Deployment in progress.

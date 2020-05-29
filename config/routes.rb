@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get "/auth/:provider/callback", to: "sessions#create"
   delete "/auth/logout", to: "sessions#destroy"
   get "/auth/unauthorised", to: "pages#unauthorised"
+  post "/deploy", to: "pages#deploy"
 end
