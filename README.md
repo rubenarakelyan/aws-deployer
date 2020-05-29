@@ -37,6 +37,8 @@ The AWS IAM user should have the following permissions, plus an access key:
   * `ecr:BatchGetImage`
   * `ecr:PutImage`
 
+A PostgreSQL database is required to store details of logged-in users.
+
 ## Deployment
 
 You can deploy directly to [Heroku](https://heroku.com/deploy). Ensure you have collected the information required by the environment variables (below).
