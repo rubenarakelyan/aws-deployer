@@ -2,6 +2,8 @@
 
 AWS Deployer is a small Rails application that allows gated deployments from staging to production for users of AWS CodePipeline and Elastic Container Registry.
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 ## Scenario
 
 The ideal deployment scenario for using this application is:
@@ -37,7 +39,7 @@ The AWS IAM user should have the following permissions, plus an access key:
 
 ## Deployment
 
-You can deploy directly to Heroku. Ensure you have collected the information required by the environment variables (below).
+You can deploy directly to [Heroku](https://heroku.com/deploy). Ensure you have collected the information required by the environment variables (below).
 
 ## Environment variables
 

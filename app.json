@@ -1,0 +1,50 @@
+{
+  "name": "AWS Deployer",
+  "description": "Deploy and keep track of deployments using AWS CodePipeline and ECR.",
+  "keywords": [
+    "aws",
+    "deploy",
+    "github",
+    "codepipeline",
+    "ecr"
+  ],
+  "repository": "https://github.com/rubenarakelyan/aws-deployer",
+  "env": {
+    "GITHUB_CLIENT_ID": {
+      "description": "The client ID from the GitHub OAuth application.",
+      "required": true
+    },
+    "GITHUB_CLIENT_SECRET": {
+      "description": "The client secret from the GitHub OAuth application.",
+      "required": true
+    },
+    "GITHUB_TEAM_ID": {
+      "description": "The ID of the GitHub team that will be allowed to access this application.",
+      "required": true
+    },
+    "AWS_REGION": {
+      "description": "The AWS region that contains the CodePipeline pipelines and ECR repository.",
+      "required": true
+    },
+    "AWS_ACCESS_KEY_ID": {
+      "description": "The access key ID for the AWS Deployer IAM user.",
+      "required": true
+    },
+    "AWS_SECRET_ACCESS_KEY": {
+      "description": "The secret access key for the AWS Deployer IAM user.",
+      "required": true
+    },
+    "STAGING_PIPELINE": {
+      "description": "The name of the staging CodePipeline pipeline.",
+      "required": true
+    },
+    "PRODUCTION_PIPELINE": {
+      "description": "The name of the production CodePipeline pipeline.",
+      "required": true
+    },
+    "IMAGE_REPOSITORY": {
+      "description": "The name of the ECR repository.",
+      "required": true
+    }
+  }
+}
