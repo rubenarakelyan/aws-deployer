@@ -47,6 +47,9 @@
       "required": true
     }
   },
+  "scripts": {
+    "postdeploy": "bundle exec rake db:migrate"
+  },
   "addons": [
     "heroku-postgresql"
   ]
