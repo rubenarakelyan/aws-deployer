@@ -14,5 +14,7 @@ class PagesController < ApplicationController
     ecr = AwsEcr.new
     ecr.tag_image("latest", "production")
     redirect_to root_path, notice: I18n.t("pipelines.deploying")
+  rescue AwsEcr::DuplicateImageError
+    redirect_to root_path, notice: I18n.t("pipelines.already_deployed")
   end
 end

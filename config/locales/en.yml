@@ -48,3 +48,4 @@ en:
     in_sync: In sync
     not_in_sync: Not in sync
     deploying: Deployment in progress.
+    already_deployed: The latest image has already been deployed.

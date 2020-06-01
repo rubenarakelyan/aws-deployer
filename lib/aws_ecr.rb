@@ -5,6 +5,12 @@ class AwsEcr
     end
   end
 
+  class DuplicateImageError < StandardError
+    def initialize(msg)
+      super(msg)
+    end
+  end
+
   def initialize
     @ecr = Aws::ECR::Client.new
   end
@@ -36,5 +42,7 @@ class AwsEcr
       image_manifest: image.images[0].image_manifest,
       image_tag: tag
     )
+  rescue Aws::ECR::Errors::ImageAlreadyExistsException
+    raise DuplicateImageError, "Image with tag #{tag} already exists"
   end
 end
