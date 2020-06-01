@@ -2,7 +2,7 @@ require_relative "../../lib/aws_code_pipeline"
 require_relative "../../lib/aws_ecr"
 
 class PagesController < ApplicationController
-  skip_before_action :require_login, only: %i[home]
+  before_action :require_login, only: %i[deploy]
 
   def home
     codepipeline = AwsCodePipeline.new
