@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root "pages#home"
   get "/auth/:provider/callback", to: "sessions#create"
   delete "/auth/logout", to: "sessions#destroy"
-  get "/auth/unauthorised", to: "pages#unauthorised"
+  get "/auth/unauthorised", to: "pages#auth_unauthorised"
+  get "/auth/failure", to: "pages#auth_failure"
   post "/deploy", to: "pages#deploy"
 end
