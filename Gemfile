@@ -64,6 +64,9 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
+  # Mock model instances
+  gem 'factory_bot_rails', '~> 5.2.0'
+  gem 'faker', '~> 2.12.0'
 end
 
 group :production do
