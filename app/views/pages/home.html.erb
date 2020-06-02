@@ -18,7 +18,7 @@
           </svg>
           <%= @staging_pipeline.start_time %>
         </p>
-        <%= link_to t("pipelines.deploy_button"), deploy_path, method: :post, class: "btn btn-dark", disabled: @production_pipeline.in_sync_with?(@staging_pipeline) %>
+        <%= link_to t("pipelines.deploy_button"), deploy_path, method: :post, class: "btn btn-dark #{@production_pipeline.in_sync_with?(@staging_pipeline) ? 'disabled' : ''}", "aria-disabled" => @production_pipeline.in_sync_with?(@staging_pipeline) %>
       </div>
     </div>
   </div>
