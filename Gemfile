@@ -67,6 +67,8 @@ group :test do
   # Mock model instances
   gem 'factory_bot_rails', '~> 5.2.0'
   gem 'faker', '~> 2.12.0'
+  # Mock web requests
+  gem 'webmock', '~> 3.8.3'
 end
 
 group :production do
