@@ -4,6 +4,8 @@ AWS Deployer is a small Rails application that allows gated deployments from sta
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
+![Dashboard](docs/dashboard.png)
+
 ## Scenario
 
 The ideal deployment scenario for using this application is:
